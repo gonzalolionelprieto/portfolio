@@ -670,7 +670,7 @@ display: none;
 	width: 60%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	margin: 0 auto;
 	/* padding: 20px 0 0 0; */
 }
@@ -686,11 +686,16 @@ display: none;
 
 }
 
-.redes-ct img{
-	width: 20px;
-	padding:  20px;
+.redes-ct  a img{
+	filter: grayscale(1);
+	margin: 10px;
+	width: 30px;
+	
 }
 
+.redes-ct  a img:hover{
+	scale: 1.05;
+}
 
 main .form-info .contacto{
 	width: 80%;
