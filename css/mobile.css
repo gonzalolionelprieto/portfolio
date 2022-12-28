@@ -313,8 +313,12 @@ header .texto-header a{
 	background: #000;
 	padding: 6px;
 	margin: 15px 0 0 30px;
+	transition: all 0.1s;
+	animation-delay: 0.5s;
+}
 
-	animation-delay: 0.7s;
+header .texto-header .link:hover{
+	transform: scale(110%);
 }
 
 header .texto-header .link{width: 25%;display: flex;justify-content: center;}
