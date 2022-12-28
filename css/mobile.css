@@ -220,6 +220,27 @@ header .nav-contenedor {
 
 }
 
+.nav-link{
+	position: relative; /* esto es necesario para poder posicionar el pseudo-elemento */
+  	text-decoration: none;
+}
+
+.nav-link::before {
+	content: ""; /* esto es necesario para poder dibujar la barra */
+	position: absolute; /* esto es necesario para poder posicionar la barra debajo del enlace */;
+	bottom: 0; /* esto coloca la barra debajo del enlace */
+	left: 0; /* esto coloca la barra al inicio del enlace */
+	width: 0%; /* esto establece el ancho inicial en 0% */
+	height: 2px; /* esto establece la altura de la barra */
+	background-color: #a2a0a0; /* esto establece el color de la barra */
+	transition: width 0.4s; /* esto agrega una transición suave al cambio de ancho */
+  }
+
+  .nav-link:hover::before {
+	width: 100%; /* esto aumenta el ancho a 100% cuando el usuario pasa el cursor por encima */
+  }  
+
+
 .nav-social-ico{
 
 	font-size: 1.1em;
@@ -232,6 +253,7 @@ header .nav-contenedor {
 	width: 20px;
 
 }
+
 
 
 header ul li {
@@ -286,7 +308,7 @@ animation-delay: 0.4s;
 
 
 header .texto-header a{
-	border-radius: 10px;
+	border-radius: 5px;
 	display: inline-block;
 	background: #000;
 	padding: 6px;
