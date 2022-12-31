@@ -993,6 +993,7 @@ footer .pie-pag{
 }
 
 @media screen and (max-width: 550px){
+	
 
 	.portfolio{
 		height: 100%;
@@ -1009,6 +1010,18 @@ footer .pie-pag{
 		padding: 20px;
 	}
 
+	.portfolio .image{
+		max-width: 800px;
+		margin-bottom: 30px;
+	}
+
+	.portfolio .text p {
+		padding: 10px 0;
+	}
+
+	.portfolio .text h2{
+		font-size: 2em;
+	}
 	
 
 }
