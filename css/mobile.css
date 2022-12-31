@@ -339,6 +339,11 @@ header .texto-header a:link, a:visited, a:active {
             color: #fff;
         }
 
+main{
+	background-color: #383f49;
+}
+
+
 main .info {
     height: 299px;
     background: rgba(32, 32, 33, 1);
@@ -510,7 +515,7 @@ letter-spacing: 2px;
 }
 
 .skillbar img{
-	filter: grayscale(.1);
+	filter: grayscale(1);
 	width: 100%;
 	transition: all .2s;
 }
@@ -526,7 +531,7 @@ letter-spacing: 2px;
 
 .portfolio {
 	position: relative;
-    height: 130vh;
+    height: 130%;
     /* padding: 10%; */
     background: #383f49;
     display: flex;
@@ -564,50 +569,106 @@ letter-spacing: 2px;
 	text-align: center;
 	letter-spacing: 10px;
 }
+
+
+
 .portfolio .container {
+	width: 80%;
+	height: 100vh;
+	display: grid; 
+  	grid-template-columns: 1fr 1fr; 
+  	grid-gap: 20px;
 
-	display: grid;
-	gap: 10px ;
-	grid-template-columns: 33% 33% 33%;
 	justify-items: center;
-	
-    height: auto;
 
-	padding-bottom: 200px;	
+    height: auto;
+	padding: 100px 0;
+	margin: 0 auto;
+	
 }
 
-.portfolio .container a{
+.portfolio .container a img{
+	
 	transition: all .2s;
 
 }
-.portfolio .container a:hover{
-	scale: 1.08;
+.portfolio .container a img:hover{
+	
+	scale: 1.02;
 }
 
 
 .portfolio a img{
+	border-radius: 20px;
 	width: 100%;
 }
 
 
+
+.portfolio .image{
+	max-width: 800px;
+}
+
+.portfolio .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	text-align: start;
+	
+}
+
+.portfolio .text p{
+	color: #fff;
+}
+
+.portfolio  h2{
+	color: #fff;
+	font-size: 3em;
+}
+
+.portfolio h4{
+	font-size: 1.5em;
+	color: #bec7d5;
+}
+
+.portfolio a{
+	margin-right: 10px;
+	color: #bec7d5;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
  .form-info{
-	
-height: 430px;
-	
+
+
+height: 100%;
+padding: 100px 0;	
 
 	
 background: rgba(32, 32, 33, 1);
 	
 box-shadow: 0 20px 60px rgba(32, 32, 33, 0.5);
-	
+
+position: relative;
 	
 left: 0;
 	
 right: 0px;
 	
-margin: auto;
-	
+
 top: 0%;
+
+margin: auto;
 }
 
 
@@ -623,8 +684,6 @@ main .form-info .titulo-form{
 main .form-info .titulo-form h1{
 color: #fff;
 text-align: center;
-
-padding: 60px 0 0 0;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
 font-size: 1.5em;
@@ -655,7 +714,6 @@ display: flex;
 	
 flex-wrap: wrap;
 	
-flex-wrap: w;
 	
 JUSTIFY-CONTENT: center;
 }
@@ -723,15 +781,6 @@ display: none;
 	scale: 1.05;
 }
 
-main .form-info .contacto{
-	width: 80%;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	
-}
 
 
 
@@ -887,7 +936,7 @@ footer .pie-pag{
 
 	.container-bar {
     width: 45%;
-    top: 10%;
+    top: 30%;
 	}
 
 	main .skills{
@@ -904,20 +953,10 @@ footer .pie-pag{
 		font-size: 3.5em;
 	}
 
-	.form-info {
-    height: 430px;
-    width: 40%;
-    position: absolute;
-    /* z-index: 2; */
-    left: 0;
-    right: 0px;
-    margin: auto;
-    top: 365%;
-	}
+	
 
 	main .form-info .titulo-form h1{
 		font-size: 2.5em;
-		padding: 100px 0 0 0;
 	}
 
 	footer .img-fija{
