@@ -344,6 +344,7 @@ header .texto-header a:link, a:visited, a:active {
 
 main{
 	background-color: #383f49;
+	overflow: hidden;
 }
 
 
