@@ -504,7 +504,7 @@ letter-spacing: 2px;
     height: auto;
 }
 
-.skillbar .ico-cont{
+.skillbar .ico-cont {
 	margin: 10px;
 	width: 50px;
 	flex-direction: column;
@@ -514,13 +514,18 @@ letter-spacing: 2px;
 	
 }
 
-.skillbar img{
+.skillbar .ico-cont p{
+	margin: 15px;
+}
+
+.skillbar svg{
+	fill: #bec7d5;
 	filter: grayscale(1);
 	width: 100%;
 	transition: all .2s;
 }
 
-.skillbar img:hover{
+.skillbar svg:hover{
 	filter: grayscale(0);
 	scale: 1.08;
 }
