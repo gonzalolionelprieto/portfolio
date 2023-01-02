@@ -344,7 +344,7 @@ header .texto-header a:link, a:visited, a:active {
 
 main{
 	background-color: #383f49;
-	overflow: hidden;
+	
 }
 
 
@@ -364,6 +364,7 @@ main .info {
 	width: 100px;
 	position: relative;
 	top: -7%;
+	
 }
 
 main .info .texto-presentacion{
@@ -888,7 +889,7 @@ footer .pie-pag{
 	 
 
 	
-
+	
 	
 
 	main .info{
@@ -975,9 +976,11 @@ footer .pie-pag{
 
 
 @media screen and (max-width: 750px){
-
+	
+	
 	.portfolio{
 		height: 100%;
+		
 
 	}
 
@@ -985,8 +988,13 @@ footer .pie-pag{
 		flex-direction: column;
 	}
 
+	.container-portfolio{
+		overflow-x: hidden;
+	}
+
 	.portfolio .container a{
 		width: 80%;
+		margin: 0 auto;
 	}
 
 	.portfolio .container {
